@@ -1,0 +1,94 @@
+{
+    "title": "WeChat – The King of Chinese Social Media",
+    "paragraph": "WeChat started as a free instant messaging app in 2011 and over the past decade has transformed into one of the most powerful apps in world. WeChat is the lifeline of every Chinese person both home and abroad and can be used for a variety of functions including:",
+    "functions": [
+        {
+            "item": "Text/Voice Messaging"
+        },
+        {
+            "item": "Social Media Posts"
+        },
+        {
+            "item": "Flight/Hotel Booking"
+        }, 
+        {
+            "item": "Ride Sharing"
+        },
+        {
+            "item": "Online Shopping"
+        },
+        {
+            "item": "Online Banking"
+        }
+    ],
+    "quote":"WeChat is not just an app, it's a lifestyle, a symbol of this era",
+    "mau":"With over 1.2 billion Monthly Active Users (MAU), WeChat is the best platform to give your brand valuable exposure to the growing Chinese consumer market.",
+    "owoa":{
+        "title":"What is an Overseas WeChat Official Account?",
+        "description":"The Western equivalent of a WeChat Official Account would be a Business Page on Facebook. However, unlike Facebook, where creating a business page is free and easy to set up (can create a page in under 5 minutes), a WeChat Official Account requires a more extensive registration process and an annual fee to keep your account active on the WeChat ecosystem.</br></br>Companies outside of China can register a WeChat “Service Account” that allows them the opportunity to push (4) articles of content each month.</br></br>Service Accounts receive valuable data such as age, location, and gender of followers to the account allowing for more specialized marketing.",
+        "requirement":{
+            "intro":"To register your international business for a WeChat Official Account, you need the following information:",
+            "information":[
+                {
+                   "item":"Application Letter" 
+                },
+                {
+                   "item":"Company Business License" 
+                },
+                {
+                   "item":"Company Trademark Certificate (if applicable)" 
+                },
+                {
+                   "item":"Annual Fee of $99 USD" 
+                }
+            ]
+        },
+        "additional":"In addition to creating your WeChat Official Account, APP Marketing provides ongoing monthly management of your Overseas WeChat Official Account. Our in-house marketing team performs the following tasks:",
+        "tasks":[
+            {
+                "item":"Creative Strategy"
+            },
+            {
+                "item":"Content Creation"
+            },
+            {
+                "item":"Translation (English & Chinese)"
+            },
+            {
+                "item":"Graphic Design"
+            },
+            {
+                "item":"Progress Tracking and Reporting"
+            }
+        ],
+        "followup":"Interested in learning more about an Overseas Official WeChat Account for your business?"
+    },
+    "miniprogram":{
+        "title":"WeChat Mini Programs",
+        "description":"WeChat Mini Programs were officially launched by Tencent in early 2017 and are “sub-applications” within the WeChat ecosystem. They allow companies to fully customize a program for their specific needs. For example:",
+        "examples":[
+            {
+                "example":"A retailer can create an e-commerce store for Chinese customers"
+            },
+            {
+                "example":"A city’s tourism department can create an interactive map of their city highlighting popular tourist spots for Chinese tourists"
+            },
+            {
+                "example":"A hotel can create a booking system for Chinese tourists"
+            },
+            {
+                "example":"A sports academy can create a booking system for clients to book and manage training sessions"
+            }
+        ],
+        "summary":"WeChat Mini Programs are gaining in popularity and have become a turning point for the platform and the whole industry. Some industry experts predict the future of WeChat may even rival iOS and Android eventually becoming another mobile operating system. ",
+        "followup":"Interested in creating a WeChat Mini Program for your company? "
+    },
+    "caseStudy":{
+        "title":"Colton’s Couture – Richmond, British Columbia, Canada",
+        "content":"Colton’s Couture began as a pop shop in 2016 and has quickly transformed into a chain of successful and flourishing brick- and mortar multi branded luxury boutiques.",
+        "highlight":"Colton’s WeChat Official Account – Leveraging WeChat to connect with local Chinese consumers in Canada",
+        "more":"Launched in 2020, Colton’s Couture registered an Overseas WeChat Account to better connect with the local Chinese community in Vancouver, Canada. The team at APP Marketing works with Colton’s creative team to highlight new fashion trends and store collections in weekly articles on their WeChat Official Account. Articles typically generate 1,000-1,500 views and have been a direct source of new customers for Colton as they continue to establish their presence on China’s top social media platform. ",
+        "followup":"Interested in learning more about WeChat Marketing for your company?"
+    }
+}
+

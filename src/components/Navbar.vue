@@ -8,12 +8,12 @@
         <i class="fa fa-caret-down"></i>
       </button>
       <div class="dropdown-content">
-        <a href="#">Digital Payments </a>
-        <a href="#">WeChat Marketing</a>
-        <a href="#">YouTube Marketing</a>
-        <a href="#">Instagram Marketing </a>
-        <a href="#">Social Media Audit</a>
-        <a href="#">Influencer/KOL Marketing </a>
+        <router-link to="/marketing-services#digital-payments">Digital Payments</router-link>
+        <router-link to="/marketing-services#wechat-marketing">WeChat Marketing</router-link>
+        <router-link to="/marketing-services#yt-marketing">YouTube Marketing</router-link>
+        <router-link to="/marketing-services#ins-marketing">Instagram Marketing</router-link>
+        <router-link to="/marketing-services#sm-audit">Social Media Audit</router-link>
+        <router-link to="/marketing-services#ik-marketing">Influencer/KOL Marketing</router-link>
       </div>
     </div>
     <div class="dropdown">
@@ -22,12 +22,12 @@
         <i class="fa fa-caret-down"></i>
       </button>
       <div class="dropdown-content">
-        <a href="#">Domestic & International Consulting</a>
-        <a href="#">Event and Campaign Planning </a>
+                <router-link to="/consulting-services#di-consulting">Domestic & International Consulting</router-link>
+                <router-link to="/consulting-services#ec-planning">Event and Campaign Planning</router-link>
       </div>
     </div>
-    <a href="#clients">Our Clients</a>
-    <a href="#contact">Contact Us</a>
+    <router-link to="/clients">Our Clients</router-link>
+    <router-link to="/contact">Contact Us</router-link>
   </div>
 </template>
 

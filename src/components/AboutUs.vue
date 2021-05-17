@@ -3,9 +3,9 @@
       <div>{{aboutUs.introduction}}</div>
       <p>Our previous clients include:</p>
       <div>{{aboutUs.previousClients}}</div>
-      <p>Some of our services include:</p>
+      <h3>Some of our services include:</h3>
       <div v-for="(service, index) in aboutUs.serviceCategory" v-bind:key = "index">
-          <div>{{service.serviceItem}}</div>
+          <h2>{{service.serviceItem}}</h2>
           <div v-if="service.paymentMethods">{{service.paymentMethods}}</div>
           <div>{{service.description}}</div>
       </div>
@@ -13,7 +13,7 @@
 </template>
 
 <script setup>
-import aboutUs from '../content/about-us';
+import aboutUs from '../content/about-us.json';
 </script>
 
 <style lang = "scss" scoped >

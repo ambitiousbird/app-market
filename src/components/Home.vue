@@ -33,12 +33,12 @@ const state = reactive({ count: 0 });
   h1{
     margin: 0;
     color:white;
-    font-size: 5rem;
+    font-size: 4.5rem;
   }
 
   h2{
     color:white;
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 }
 </style>

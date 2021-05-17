@@ -80,7 +80,7 @@
       </div>
     </div>
 
-    <div class="yt-marketing">
+    <div id="yt-marketing">
       <h1>Youtube Marketing</h1>
       <h3>{{ ymarketing.title }}</h3>
       <div>{{ ymarketing.paragraph }}</div>

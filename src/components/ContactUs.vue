@@ -1,6 +1,9 @@
 <template>
   <div class="contact-us">
-      <h1>contact us works</h1>
+      <div class="title">
+        <h1>contact Us</h1>
+      </div>
+
   </div>
 </template>
 
@@ -8,4 +11,12 @@
 </script>
 
 <style lang = "scss" scoped >
+.title{
+    background-image:url("../assets/office.jpg");
+    background-size: cover;
+    height:80vh;
+    h1{
+        text-transform: uppercase;
+    }
+}
 </style>

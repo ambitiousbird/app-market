@@ -60,8 +60,8 @@ import clients from "../content/clients.json";
     width:450px;
     img{
         /* width:10%; */
-        max-width: 105px;
-        min-width: 80px;
+        max-width: 100px;
+        min-width: 70px;
         padding: 0 1rem;
     }
 }

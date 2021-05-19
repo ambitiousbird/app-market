@@ -82,20 +82,22 @@ export default {
 }
 
 .title {
-  background-color: rgba(10, 131, 70, 0.829);
+  background-color: rgba(131, 113, 10, 0.829);
   min-height: 350px;
   text-align: center;
   h1 {
     padding-top: 50px;
+    font-size: 3rem;
   }
   div {
-    margin-top: 1.2rem;
-    font-size: 1.2rem;
+    margin: 1.2rem auto;
+    font-size: 1.5rem;
   }
 }
 
 .container {
   height: 720px;
+  font-size: 1.05rem;
 }
 
 .posted{
@@ -113,8 +115,8 @@ export default {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -55%);
-  -ms-transform: translate(40%, 30%);
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   box-shadow: 0 0 6px 0.5px black;
 }
 
@@ -122,7 +124,7 @@ export default {
   min-height: 400px;
   text-align: center;
   transform: translate(-50%, -55%);
-  -ms-transform: translate(40%, 30%);
+  -ms-transform: translate(-50%, -55%);
 }
 
 .content {

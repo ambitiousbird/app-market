@@ -7,3 +7,5 @@
 7. Run cross browser testing
 8. Check accesibility
 9. Responsiveness testing
+10. Fix footer routing
+11. Fix footer style

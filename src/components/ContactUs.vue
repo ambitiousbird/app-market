@@ -79,12 +79,14 @@ export default {
 <style lang = "scss" scoped >
 .contact-us {
   position: relative;
+  margin-top:6rem;
 }
 
 .title {
   background-color: rgba(131, 113, 10, 0.829);
-  min-height: 350px;
+  min-height: 360px;
   text-align: center;
+  padding-top:1rem;
   h1 {
     padding-top: 50px;
     font-size: 3rem;

@@ -23,7 +23,7 @@
   text-align: center;
 
   .greeting {
-    padding-top: 10rem;
+    padding-top: 15rem;
   }
 
   h1 {

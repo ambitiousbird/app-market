@@ -59,6 +59,10 @@ import consulting from "../content/di-consulting.json";
 </script>
 
 <style lang = "scss" scoped >
+.consulting-services{
+    margin-top:6rem;
+}
+
 .banner {
   position: relative;
   img {
@@ -89,10 +93,9 @@ import consulting from "../content/di-consulting.json";
 
 .content {
   a {
+
     text-decoration: none;
-    &:visited {
-      color: rgb(107, 100, 112);
-    }
+    color: rgb(107, 100, 112);
     &:hover {
       color: rgb(141, 143, 148);
     }

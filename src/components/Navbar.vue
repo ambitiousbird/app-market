@@ -3,27 +3,43 @@
     <router-link to="/">Home</router-link>
     <router-link to="/about-us">About Us</router-link>
     <div class="dropdown">
-      <button class="dropbtn">
+      <button class="dropbtn" @click="$router.push('marketing-services')">
         Marketing Services
         <i class="fa fa-caret-down"></i>
       </button>
       <div class="dropdown-content">
-        <router-link to="/marketing-services#digital-payments">Digital Payments</router-link>
-        <router-link to="/marketing-services#wechat-marketing">WeChat Marketing</router-link>
-        <router-link to="/marketing-services#yt-marketing">YouTube Marketing</router-link>
-        <router-link to="/marketing-services#ins-marketing">Instagram Marketing</router-link>
-        <router-link to="/marketing-services#sm-audit">Social Media Audit</router-link>
-        <router-link to="/marketing-services#ik-marketing">Influencer/KOL Marketing</router-link>
+        <router-link to="/marketing-services#digital-payments"
+          >Digital Payments</router-link
+        >
+        <router-link to="/marketing-services#wechat-marketing"
+          >WeChat Marketing</router-link
+        >
+        <router-link to="/marketing-services#yt-marketing"
+          >YouTube Marketing</router-link
+        >
+        <router-link to="/marketing-services#ins-marketing"
+          >Instagram Marketing</router-link
+        >
+        <router-link to="/marketing-services#sm-audit"
+          >Social Media Audit</router-link
+        >
+        <router-link to="/marketing-services#ik-marketing"
+          >Influencer/KOL Marketing</router-link
+        >
       </div>
     </div>
     <div class="dropdown">
-      <button class="dropbtn">
+      <button class="dropbtn" @click="$router.push('consulting-services')">
         Consulting Services
         <i class="fa fa-caret-down"></i>
       </button>
       <div class="dropdown-content">
-                <router-link to="/consulting-services#di-consulting">Domestic & International Consulting</router-link>
-                <router-link to="/consulting-services#ec-planning">Event and Campaign Planning</router-link>
+        <router-link to="/consulting-services#di-consulting"
+          >Domestic & International Consulting</router-link
+        >
+        <router-link to="/consulting-services#ec-planning"
+          >Event and Campaign Planning</router-link
+        >
       </div>
     </div>
     <router-link to="/clients">Our Clients</router-link>
@@ -32,10 +48,21 @@
 </template>
 
 <script setup>
+let prevScrollpos = window.pageYOffset;
+window.onscroll = function () {
+  let currentScrollPos = window.pageYOffset;
+  if (currentScrollPos<=280 || prevScrollpos > currentScrollPos) {
+    document.getElementsByClassName("navbar")[0].style.top = "0";
+  } else {
+    document.getElementsByClassName("navbar")[0].style.top = "-200px";
+    document.getElementsByClassName("navbar")[0].style.transition = "top .6s";
+  }
+  prevScrollpos = currentScrollPos;
+};
 </script>
 
 <style lang="scss" scoped>
-@mixin underline-stroke{
+@mixin underline-stroke {
   &:after,
   :before {
     transition: all 0.5s;
@@ -60,10 +87,14 @@
 }
 
 .navbar {
-  overflow: hidden;
+  box-shadow: 0 0 6px 0;
+  z-index: 100;
+  position: fixed;
+  width: 100%;
   background-color: white;
   padding-top: 1.5rem;
-  >a{
+  padding-bottom: 1.5rem;
+  > a {
     @include underline-stroke;
   }
 }
@@ -73,27 +104,31 @@
   font-size: 18px;
   color: black;
   text-align: center;
-  padding: 14px 16px;
+  padding: 14px 22px;
   text-decoration: none;
   position: relative;
 }
 
 .dropdown {
   float: left;
-  overflow: hidden;
+  // overflow: hidden;
 }
 
 .dropdown .dropbtn {
-  position:relative;
+  position: relative;
   font-size: 18px;
   border: none;
   outline: none;
   color: black;
-  padding: 14px 16px;
+  padding: 14px 22px;
   background-color: inherit;
   font-family: inherit;
   margin: 0;
   @include underline-stroke;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .dropdown-content {
@@ -106,6 +141,7 @@
 }
 
 .dropdown-content a {
+  // z-index: 1000;
   float: none;
   color: black;
   padding: 12px 16px;
@@ -116,10 +152,9 @@
 
 .dropdown-content a:hover {
   background-color: #ddd;
-} 
+}
 
 .dropdown:hover .dropdown-content {
   display: block;
 }
-
 </style>

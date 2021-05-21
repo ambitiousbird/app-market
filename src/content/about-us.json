@@ -3,27 +3,33 @@
     "previousClients": "Shu Uemura, Jurlique, Audemars Piguet, Mercedes, PGA Tour, T&T Supermarket, and more",
     "serviceCategory": [{
             "serviceItem": "Digital Payments",
+            "path":"/marketing-services#digital-payments",
             "paymentMethods": "WeChat Pay, Alipay, UnionPay QR Code",
             "description": "We help your company register and accept Chinese Digital Payments. This is the first step in building a successful Chinese marketing plan for your business."
         },
         {
             "serviceItem": "WeChat Marketing",
+            "path":"/marketing-services#wechat-marketing",
             "description": "We help your company establish a presence on China’s #1 social media app."
         },
         {
             "serviceItem": "Influencer/KOL Marketing",
+            "path":"/marketing-services#ik-marketing",
             "description": "We help you identify and connect your brand with the top domestic and international influencers and KOLs (Key Opinion Leaders) to give valuable exposure to your brand"
         },
         {
             "serviceItem": "Social Media Management",
+            "path":"/marketing-services#sm-audit",
             "description": "We provide your company with monthly account management for both domestic (Facebook, Twitter, Instagram) and Chinese (WeChat) social media accounts."
         },
         {
             "serviceItem": "Domestic & International Consulting",
+            "path":"/consulting-services#di-consulting",
             "description": "We provide professional consultation for companies wanting to attract local Chinese clients and businesses wanting to expand their operations into China."
         },
         {
             "serviceItem": "Event and Campaign planning",
+            "path":"/consulting-services#ec-planning",
             "description": "We help our clients design and implement customized online and offline campaigns to fit their marketing needs."
         }
     ]

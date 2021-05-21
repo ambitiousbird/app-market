@@ -7,6 +7,7 @@
       <div v-if="index === 0" class="social-media">
         <img src="../assets/wechat.svg" alt="wechat logo" />
         <img src="../assets/tiktok.svg" alt="tiktok logo" />
+        <img src="../assets/sina-weibo.svg" alt="Sina weibo logo" />
         <img src="../assets/youtube.svg" alt="youtube logo" />
         <img src="../assets/instagram.svg" alt="instagram logo" />
       </div>
@@ -26,11 +27,11 @@ import clients from "../content/clients.json";
 </script>
 
 <style lang = "scss" scoped >
-@import url("https://fonts.googleapis.com/css2?family=Viga&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap");
 
 .clients {
   margin-bottom: 10rem;
+  margin-top:6rem;
 }
 
 .paragraph {
@@ -42,14 +43,11 @@ import clients from "../content/clients.json";
 }
 
 .title {
-  padding: 5rem 10%;
-  background-color: rgba(226, 225, 225, 0.74);
-  font-family: "Viga", sans-serif;
-  font-size: 1.5rem;
-  text-transform: uppercase;
-
+  padding: 8rem 9rem;
+  background-color: rgb(105, 103, 103);
   h1 {
-    color: rgb(36, 35, 35);
+    color: white;
+    font-size: 5rem;
   }
 }
 

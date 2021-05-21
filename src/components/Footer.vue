@@ -14,10 +14,10 @@
 
         <ul class="nav__ul">
           <li>
-            <a href="#">About Us</a>
+            <router-link to="/about-us">About Us</router-link>
           </li>
           <li>
-            <a href="#">Our Clients</a>
+            <router-link to="/clients">Our Clients</router-link>
           </li>
         </ul>
       </li>
@@ -26,10 +26,14 @@
 
         <ul class="nav__ul">
           <li>
-            <a href="#">Domestic/International Consulting</a>
+            <router-link to="/consulting-services#di-consulting"
+              >Domestic & International Consulting</router-link
+            >
           </li>
           <li>
-            <a href="#">Event and Compaign Planning</a>
+            <router-link to="/consulting-services#ec-planning"
+              >Event and Campaign Planning</router-link
+            >
           </li>
         </ul>
       </li>
@@ -38,43 +42,38 @@
         <h2 class="nav__title">Marketing Services</h2>
         <ul class="nav__ul nav__ul--extra">
           <li>
-            <a href="#">Digital Payments</a>
+            <router-link to="/marketing-services#digital-payments"
+              >Digital Payments</router-link
+            >
           </li>
           <li>
-            <a href="#">Wechat Marketing</a>
+            <router-link to="/marketing-services#wechat-marketing"
+              >WeChat Marketing</router-link
+            >
           </li>
           <li>
-            <a href="#">YouTube Marketing</a>
+            <router-link to="/marketing-services#yt-marketing"
+              >YouTube Marketing</router-link
+            >
           </li>
           <li>
-            <a href="#">Instagram Marketing</a>
+            <router-link to="/marketing-services#ins-marketing"
+              >Instagram Marketing</router-link
+            >
           </li>
           <li>
-            <a href="#">Social Media Audit</a>
+            <router-link to="/marketing-services#sm-audit"
+              >Social Media Audit</router-link
+            >
           </li>
           <li>
-            <a href="#">Influencer/KOL Marketing</a>
+            <router-link to="/marketing-services#ik-marketing"
+              >Influencer/KOL Marketing</router-link
+            >
           </li>
         </ul>
       </li>
 
-      <li class="nav__item">
-        <h2 class="nav__title">Legal</h2>
-
-        <ul class="nav__ul">
-          <li>
-            <a href="#">Privacy Policy</a>
-          </li>
-
-          <li>
-            <a href="#">Terms of Use</a>
-          </li>
-
-          <li>
-            <a href="#">Sitemap</a>
-          </li>
-        </ul>
-      </li>
     </ul>
 
     <div class="legal">
@@ -88,6 +87,7 @@
 
 <style lang = "scss" scoped >
 .footer {
+  min-height:320px;
   display: flex;
   flex-flow: row wrap;
   padding: 30px 30px 20px 30px;
@@ -103,6 +103,13 @@
 .footer__addr {
   margin-right: 1.25em;
   margin-bottom: 2em;
+  @media only screen and (max-width: 1068px) {
+    address {
+      a {
+        margin: 2rem auto;
+      }
+    }
+  }
 }
 
 /* .footer__logo {
@@ -208,7 +215,11 @@
   }
 
   .footer__nav {
-    flex: 2 0px;
+    flex: 3 0px;
+  }
+
+  .nav__item:first-child{
+    padding-left:2rem;
   }
 }
 </style>

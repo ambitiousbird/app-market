@@ -9,3 +9,6 @@
 9. Responsiveness testing
 10. Fix footer routing
 11. Fix footer style
+12. feature: Require is not working, assets urls are hardcoded currently, need to fix it
+13. Lazy load images
+14. bugfix: dropdown items don't go away upon click

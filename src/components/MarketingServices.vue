@@ -9,10 +9,9 @@
           suscipit dolor animi modi beatae perferendis aliquam dicta
           necessitatibus illum, id aliquid ea perspiciatis itaque facilis quia,
           nihil a? Quia repellat sapiente amet excepturi, cumque similique,
-          consequuntur ratione cum nemo dolorem voluptatem 
-
-          libero doloribus asperiores praesentium perferendis, ipsam mollitia a
-          assumenda. Cum eaque eos quo?
+          consequuntur ratione cum nemo dolorem voluptatem libero doloribus
+          asperiores praesentium perferendis, ipsam mollitia a assumenda. Cum
+          eaque eos quo?
         </p>
         <!-- <p>{{ aboutUs.introduction }}</p> -->
       </div>
@@ -50,12 +49,6 @@
               class="card-shadow"
               src="https://www.statista.com/graphic/1/255778/number-of-active-wechat-messenger-accounts.jpg"
               alt="Statistic: Number of monthly active WeChat users from 2nd quarter 2011 to 4th quarter 2020 (in millions) | Statista"
-              style="
-                width: 100%;
-                height: auto !important;
-                max-width: 1000px;
-                -ms-interpolation-mode: bicubic;
-              "
           /></a>
           <p>{{ wmarketing.mau }}</p>
         </div>
@@ -264,37 +257,29 @@ const contact = "Contact our team for more information";
 <style lang = "scss" scoped >
 .marketing-services {
   margin: 6rem auto;
+  @media only screen and (max-width: 768px) {
+    margin-top: 12rem;
+  }
 }
 
 .banner {
-  position: relative;
-  img {
-    object-fit: cover;
-    width: 100%;
-    min-height: 600px;
-    opacity: 0.8;
-    filter: brightness(50%);
-    transition: transform 10s;
-  }
   .banner-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -32%);
-    color: white;
-    min-width: 72%;
-    min-height: 800px;
-    h1 {
-      font-size: 5rem;
-      padding-bottom: 2.4rem;
-    }
-    p {
-      font-size: 1.5rem;
+    @media only screen and (max-width: 768px) {
+      h1 {
+        font-size: 3rem;
+      }
+      p {
+        font-size: 1.2rem;
+      }
     }
   }
 }
 
 .content {
+  margin: 3rem auto;
+  width: 68%;
+  font-size: 1.05rem;
+
   a {
     display: inline-block;
     color: grey;
@@ -303,13 +288,11 @@ const contact = "Contact our team for more information";
       text-decoration: underline;
     }
   }
-  margin: 3rem auto;
-  width: 68%;
+
   > div {
     margin: 8rem auto;
   }
 
-  font-size: 1.05rem;
   h3 {
     margin: 2rem auto;
   }
@@ -346,6 +329,15 @@ const contact = "Contact our team for more information";
           width: 100%;
         }
       }
+      @media only screen and (max-width: 768px) {
+        img {
+          max-width: 100%;
+          max-width: 360px;
+        }
+        p {
+          padding: 0;
+        }
+      }
     }
 
     .official-account {
@@ -374,6 +366,11 @@ const contact = "Contact our team for more information";
           flex-direction: column;
           flex-wrap: wrap;
         }
+        @media only screen and (max-width: 1024px) {
+          img {
+            margin: 1rem auto;
+          }
+        }
       }
     }
 
@@ -395,7 +392,7 @@ const contact = "Contact our team for more information";
           display: flex;
           img {
             max-width: 400px;
-            max-height:660px;
+            max-height: 660px;
             object-fit: contain;
 
             &:first-child {
@@ -470,12 +467,18 @@ const contact = "Contact our team for more information";
         img {
           max-width: 420px;
         }
+        /* @media only screen and (max-width: 768px) {
+            border:solid red;
+        } */
       }
 
       .text-wrapper {
         margin: 2rem 3rem;
         line-height: 2rem;
         font-size: 1.2rem;
+        /* @media only screen and (max-width:768px){
+            margin: auto;
+        } */
       }
     }
   }
@@ -485,6 +488,19 @@ const contact = "Contact our team for more information";
       display: inline-block;
       margin-top: 2rem;
     }
+  }
+
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+    font-size: 1rem;
+    padding-left:1.2rem;
+    padding-right:1.2rem;
+  }
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+    font-size: 1rem;
+    padding:0;
+    width:95%;
   }
 }
 </style>

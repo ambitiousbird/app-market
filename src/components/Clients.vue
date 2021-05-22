@@ -31,15 +31,10 @@ import clients from "../content/clients.json";
 
 .clients {
   margin-bottom: 10rem;
-  margin-top:6rem;
-}
-
-.paragraph {
-  padding: 1rem 5rem;
-  max-width: 80%;
-  margin: 0 auto;
-  font-family: "Nunito", sans-serif;
-  font-size: 1.5rem;
+  margin-top: 6rem;
+  @media only screen and (max-width: 768px) {
+    margin-top: 12rem;
+  }
 }
 
 .title {
@@ -48,6 +43,13 @@ import clients from "../content/clients.json";
   h1 {
     color: white;
     font-size: 5rem;
+  }
+  @media only screen and (max-width: 768px) {
+    padding: 8rem 0;
+    width: 100%;
+    h1 {
+      font-size: 3rem;
+    }
   }
 }
 
@@ -60,6 +62,17 @@ import clients from "../content/clients.json";
     max-width: 100px;
     min-width: 70px;
     padding: 0 1rem;
+    @media only screen and (max-width: 768px) {
+      margin: auto;
+      width: 40px;
+      min-width: 60px;
+      max-height: 50px;
+      padding: 0 1rem;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    width: auto;
+    margin: 3rem 12px;
   }
 }
 
@@ -68,5 +81,30 @@ import clients from "../content/clients.json";
   padding-top: 4rem;
   width: 640px;
   margin: 0 auto;
+  object-fit: contain;
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+.paragraph {
+  padding: 1rem 5rem;
+  max-width: 80%;
+  margin: 0 auto;
+  font-family: "Nunito", sans-serif;
+  font-size: 1.5rem;
+
+  @media only screen and (max-width: 768px) {
+    padding: 2rem 1rem;
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  img {
+    width: 300px;
+    display: block;
+    margin: auto;
+  }
 }
 </style>

@@ -79,14 +79,17 @@ export default {
 <style lang = "scss" scoped >
 .contact-us {
   position: relative;
-  margin-top:6rem;
+  margin-top: 6rem;
+  @media only screen and (max-width: 768px) {
+    margin-top: 12rem;
+  }
 }
 
 .title {
   background-color: rgba(131, 113, 10, 0.829);
   min-height: 360px;
   text-align: center;
-  padding-top:1rem;
+  padding-top: 1rem;
   h1 {
     padding-top: 50px;
     font-size: 3rem;
@@ -102,8 +105,8 @@ export default {
   font-size: 1.05rem;
 }
 
-.posted{
-    height:550px;
+.posted {
+  height: 550px;
 }
 
 .form-container,
@@ -120,6 +123,10 @@ export default {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   box-shadow: 0 0 6px 0.5px black;
+
+  @media only screen and (max-width: 768px) {
+    width: 80%;
+  }
 }
 
 .success {

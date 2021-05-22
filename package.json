@@ -5,7 +5,8 @@
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview",
-    "clean": "vite --force"
+    "clean": "vite --force",
+    "deploy": "vite build && firebase deploy --project appmarketing-7fed3"
   },
   "dependencies": {
     "typescript": "^4.2.4",

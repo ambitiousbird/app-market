@@ -39,5 +39,20 @@
     font-size: 1.8rem;
     padding-bottom: 3rem;
   }
+
+  @media only screen and (max-width: 768px) {
+    margin-top:2rem;
+    h1 {
+      font-size: 2.5rem;
+    }
+    h2 {
+      font-size: 1rem;
+    }
+
+    .greeting{
+      padding-left:2rem;
+      padding-right:2rem;
+    }
+  }
 }
 </style>

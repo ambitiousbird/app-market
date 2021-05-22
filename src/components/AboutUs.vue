@@ -80,37 +80,26 @@ const findOurMore = "Find Our More";
 <style lang = "scss" scoped >
 .about-us {
   margin: 6rem auto;
+  @media only screen and (max-width: 768px) {
+      margin: 4rem auto;
+  }
+  /* @media only screen and (max-width:600px){
+    margin: 1rem auto;
+  } */
 }
 
 .banner {
-  position: relative;
   img {
-    object-fit: cover;
-    width: 100%;
-    min-height: 600px;
-    opacity: 0.8;
     filter: brightness(65%);
-    transition: transform 10s;
   }
   .banner-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -32%);
-    color: white;
-    min-width: 72%;
-    min-height: 800px;
-    h1 {
-      font-size: 5rem;
-      padding-bottom: 2.4rem;
-    }
-    p {
-      font-size: 1.5rem;
+    @media only screen and (max-width: 768px) {
+      top: 60%;
     }
   }
 
   @media only screen and (max-width: 768px) {
-    padding-top: 3rem;
+    padding-top: 8rem;
   }
 }
 
@@ -133,12 +122,19 @@ const findOurMore = "Find Our More";
 
     @media only screen and (max-width: 768px) {
       margin: 0;
+      img {
+        max-width: 200px;
+        max-height:135px;
+        padding: 1rem 3rem;
+        object-fit: contain;
+        margin: 0 auto;
+      }
     }
   }
 }
 
 .services {
-  margin-left: 2rem;
+  margin: auto 1rem;
   h2 {
     font-size: 2rem;
     margin-bottom: 2rem;
@@ -164,11 +160,15 @@ const findOurMore = "Find Our More";
         max-width: 500px;
         max-height: 400px;
         min-height: 375px;
+        @media only screen and (max-width: 768px) {
+          width: 100%;
+        }
       }
 
-          @media only screen and (max-width: 768px) {
-      width: 100%;
-    }
+      @media only screen and (max-width: 768px) {
+        width: 100%;
+        height: 660px;
+      }
       .service-content {
         padding: 2px 16px;
         font-size: 1.1rem;

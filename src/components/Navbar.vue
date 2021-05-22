@@ -1,5 +1,5 @@
 <template>
-  <div class="navbar">
+  <nav class="navbar">
     <router-link to="/">Home</router-link>
     <router-link to="/about-us">About Us</router-link>
     <div class="dropdown">
@@ -44,14 +44,15 @@
     </div>
     <router-link to="/clients">Our Clients</router-link>
     <router-link to="/contact">Contact Us</router-link>
-  </div>
+  </nav>
 </template>
 
 <script setup>
 let prevScrollpos = window.pageYOffset;
+let shouldhide = false;
 window.onscroll = function () {
   let currentScrollPos = window.pageYOffset;
-  if (currentScrollPos<=280 || prevScrollpos > currentScrollPos) {
+  if (currentScrollPos <= 280 || prevScrollpos > currentScrollPos) {
     document.getElementsByClassName("navbar")[0].style.top = "0";
   } else {
     document.getElementsByClassName("navbar")[0].style.top = "-200px";
@@ -59,6 +60,17 @@ window.onscroll = function () {
   }
   prevScrollpos = currentScrollPos;
 };
+
+// document.addEventListener("DOMContentLoaded", function (e) {
+//   let dropdownItems = document.getElementsByClassName("dropdown-content");
+//   console.log(dropdownItems);
+//   for (let i = 0; i < dropdownItems.length; i++) {
+//     dropdownItems[i].onclick =function(){
+//       console.log("clicked")
+//       dropdownItems[i].style.display = 'none';
+//     };
+//   }
+// });
 </script>
 
 <style lang="scss" scoped>
@@ -157,4 +169,5 @@ window.onscroll = function () {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
 </style>

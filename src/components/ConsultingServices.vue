@@ -10,10 +10,8 @@
           earum dolores asperiores magni unde doloremque quam voluptates, beatae
           et atque! Soluta quis, recusandae harum quo amet veritatis ullam vel
           maiores impedit obcaecati atque dicta quam pariatur voluptatem
-          accusamus aliquam dignissimos? Dignissimos voluptatem, ipsam quibusdam
-          tempore corporis molestias. Voluptates voluptate modi aliquid error
-          molestias quibusdam, nulla dolore dolor veritatis obcaecati a
-          voluptas. Minus rem mollitia quas quidem quos cum molestias!
+          accusamus aliquam dignissimos? a voluptas. Minus rem mollitia quas
+          quidem quos cum molestias!
         </p>
       </div>
     </div>
@@ -59,41 +57,15 @@ import consulting from "../content/di-consulting.json";
 </script>
 
 <style lang = "scss" scoped >
-.consulting-services{
-    margin-top:6rem;
-}
-
-.banner {
-  position: relative;
-  img {
-    object-fit: cover;
-    width: 100%;
-    min-height: 600px;
-    opacity: 0.5;
-    transition: transform 10s;
+.consulting-services {
+  margin-top: 6rem;
+  @media only screen and (max-width: 768px) {
+    margin-top: 12rem;
   }
-  .banner-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -30%);
-    color: white;
-    min-width: 72%;
-    min-height: 800px;
-    h1 {
-      font-size: 5rem;
-      padding-bottom: 1.2rem;
-    }
-    p {
-      font-size: 1.3rem;
-    }
-  }
-  background-color: black;
 }
 
 .content {
   a {
-
     text-decoration: none;
     color: rgb(107, 100, 112);
     &:hover {
@@ -108,6 +80,10 @@ import consulting from "../content/di-consulting.json";
   }
   ul {
     list-style-type: square;
+  }
+  @media only screen and (max-width: 768px) {
+    margin: 3rem auto;
+    font-size: 1rem;
   }
 }
 </style>

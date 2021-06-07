@@ -12,3 +12,4 @@
 12. feature: Require is not working, assets urls are hardcoded currently, need to fix it
 13. Lazy load images
 14. bugfix: dropdown items don't go away upon click
+15. CSS consistency, including using global variables

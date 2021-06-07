@@ -13,7 +13,6 @@
           asperiores praesentium perferendis, ipsam mollitia a assumenda. Cum
           eaque eos quo?
         </p>
-        <!-- <p>{{ aboutUs.introduction }}</p> -->
       </div>
     </div>
 
@@ -41,7 +40,6 @@
 
         <blockquote>"{{ wmarketing.quote }}"</blockquote>
         <div class="mau-container">
-          <!-- <img src="../assets/wechat-mau.png" alt="" /> -->
           <a
             href="https://www.statista.com/statistics/255778/number-of-active-wechat-messenger-accounts/"
             rel="nofollow"
@@ -137,12 +135,10 @@
 
         <div class="case-study">
           <h3>{{ ymarketing.caseStudy.title }}</h3>
-          <!-- <img src="../assets/turf.png" alt="turf" /> -->
           <div class="video-wrapper">
             <iframe
               src="https://www.youtube.com/embed/6Q1dHyH_vKQ"
               title="YouTube video player"
-              frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
             ></iframe>
@@ -317,10 +313,13 @@ const contact = "Contact our team for more information";
       display: flex;
       align-items: center;
       p {
-        width: 40%;
-        padding-left: 4rem;
+        width: 55%;
+        padding-left: 2rem;
         font-size: 1.3rem;
         line-height: 2rem;
+      }
+      img {
+        max-width: 95%;
       }
       @media only screen and (max-width: 1024px) {
         flex-direction: column;
@@ -365,8 +364,6 @@ const contact = "Contact our team for more information";
         @media only screen and (max-width: 1024px) {
           flex-direction: column;
           flex-wrap: wrap;
-        }
-        @media only screen and (max-width: 1024px) {
           img {
             margin: 1rem auto;
           }
@@ -436,6 +433,10 @@ const contact = "Contact our team for more information";
         transform: translate(-50%, -50%);
         width: 80%;
         height: 80%;
+        @media only screen and (max-width: 768px) {
+          width: 100%;
+          height: 100%;
+        }
       }
 
       .img-left,
@@ -456,6 +457,10 @@ const contact = "Contact our team for more information";
           flex-direction: column;
           flex-wrap: wrap;
         }
+
+        @media only screen and (max-width: 768px) {
+          margin: 3rem auto;
+        }
       }
 
       .img-left {
@@ -467,18 +472,15 @@ const contact = "Contact our team for more information";
         img {
           max-width: 420px;
         }
-        /* @media only screen and (max-width: 768px) {
-            border:solid red;
-        } */
       }
 
       .text-wrapper {
         margin: 2rem 3rem;
         line-height: 2rem;
         font-size: 1.2rem;
-        /* @media only screen and (max-width:768px){
-            margin: auto;
-        } */
+        @media only screen and (max-width: 768px) {
+          margin: 2rem 0.8rem;
+        }
       }
     }
   }
@@ -493,14 +495,12 @@ const contact = "Contact our team for more information";
   @media only screen and (max-width: 768px) {
     width: 100%;
     font-size: 1rem;
-    padding-left:1.2rem;
-    padding-right:1.2rem;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
   }
   @media only screen and (max-width: 600px) {
-    width: 100%;
-    font-size: 1rem;
-    padding:0;
-    width:95%;
+    padding: 0;
+    width: 95%;
   }
 }
 </style>

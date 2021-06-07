@@ -48,6 +48,16 @@
           ></textarea>
           <input type="submit" value="Submit" v-on:click="onClick" />
         </form>
+
+        <div style="position: absolute; left: -5000px">
+          <input
+            type="checkbox"
+            name="dancing_silver_tartan_carpenter"
+            value="1"
+            tabindex="-1"
+            autocomplete="no"
+          />
+        </div>
       </div>
 
       <div class="success" v-if="posted">

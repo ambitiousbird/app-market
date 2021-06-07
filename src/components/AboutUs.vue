@@ -120,7 +120,7 @@ const findOurMore = "Find Our More";
       object-fit: contain;
     }
 
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 1024px) {
       margin: 0;
       img {
         max-width: 200px;

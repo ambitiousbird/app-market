@@ -62,6 +62,7 @@ import clients from "../content/clients.json";
     max-width: 100px;
     min-width: 70px;
     padding: 0 1rem;
+
     @media only screen and (max-width: 768px) {
       margin: auto;
       width: 40px;
@@ -69,8 +70,12 @@ import clients from "../content/clients.json";
       max-height: 50px;
       padding: 0 1rem;
     }
+
+    @media only screen and (max-width: 1024px) {
+      max-height: 75px;
+    }
   }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1024px) {
     width: auto;
     margin: 3rem 12px;
   }

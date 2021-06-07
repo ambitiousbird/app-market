@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar">
+  <nav class="navbar" v-bind:class="{ homepage: isHomepage }">
     <router-link to="/">Home</router-link>
     <router-link to="/about-us">About Us</router-link>
     <div class="dropdown">
@@ -47,9 +47,10 @@
   </nav>
 </template>
 
-<script setup>
+<script >
 let prevScrollpos = window.pageYOffset;
 let shouldhide = false;
+
 window.onscroll = function () {
   let currentScrollPos = window.pageYOffset;
   if (currentScrollPos <= 280 || prevScrollpos > currentScrollPos) {
@@ -59,6 +60,14 @@ window.onscroll = function () {
     document.getElementsByClassName("navbar")[0].style.transition = "top .6s";
   }
   prevScrollpos = currentScrollPos;
+};
+
+export default {
+  computed: {
+    isHomepage: function () {
+      return this.$route.path === "/";
+    },
+  },
 };
 
 // document.addEventListener("DOMContentLoaded", function (e) {
@@ -170,4 +179,17 @@ window.onscroll = function () {
   display: block;
 }
 
+.homepage {
+  background-color: #096653;
+  a {
+    color: white;
+  }
+
+  .dropdown .dropbtn {
+    color: white;
+  }
+  .dropdown-content a {
+    color: black;
+  }
+}
 </style>
